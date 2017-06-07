@@ -22,7 +22,7 @@ We've given you a few migrations in the `db/migrate` directory to create the net
 ### `spec/actor_spec.rb` and `spec/character_spec.rb`
 
 * Write a migration for the actors table. An actor should have a `first_name` and a `last_name`. 
-* Write a migration for the characters table. A character should have a `name` and a `show_id`––a character will belong to a show. 
+* Write a migration for the characters table. A character should have a `name`, `show_id`, and a `actor_id` ––a character will belong to a show. 
 * Associate the `Actor` model with the `Character` and `Show` model. An actor should have many characters and many shows through characters. 
 * Write a method in the `Actor` class, `#full_name`, that returns the first and last name of an actor. 
 * Write a method in the `Actor` class, `#list_roles`, that lists all of the characters that actor has. 
@@ -41,3 +41,5 @@ We've given you a few migrations in the `db/migrate` directory to create the net
 * Rails Guide - [Active Record Migrations](http://edgeguides.rubyonrails.org/active_record_migrations.html)
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/activerecord-tvland' title='TV Land ActiveRecord Associations Lab'>TV Land ActiveRecord Associations Lab</a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/activerecord-tvland'>ActiveRecord Associations Lab II </a> on Learn.co and start learning to code for free.</p>
